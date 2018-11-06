@@ -1,14 +1,14 @@
 AWSTemplateFormatVersion: 2010-09-09
 Transform: AWS::Serverless-2016-10-31
 Resources:
-  function93DF463B:
+  function1F361C3:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: !Sub ${AWS::StackName}-function93DF463B
+      FunctionName: !Sub ${AWS::StackName}-function1F361C3
       Description: !Sub
         - Stackery Stack ${StackeryStackTagName} Environment ${StackeryEnvironmentTagName} Function ${ResourceName}
-        - ResourceName: function93DF463B
-      CodeUri: src/function93DF463B
+        - ResourceName: function1F361C3
+      CodeUri: src/function1F361C3
       Handler: index.handler
       Runtime: nodejs8.10
       MemorySize: 3008
@@ -21,14 +21,14 @@ Resources:
       Environment:
         Variables:
           SECRETS_NAMESPACE: !Sub /${StackeryEnvironmentTagName}/
-  functionB778E898:
+  functionCE83D452:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: !Sub ${AWS::StackName}-functionB778E898
+      FunctionName: !Sub ${AWS::StackName}-functionCE83D452
       Description: !Sub
         - Stackery Stack ${StackeryStackTagName} Environment ${StackeryEnvironmentTagName} Function ${ResourceName}
-        - ResourceName: functionB778E898
-      CodeUri: src/functionB778E898
+        - ResourceName: functionCE83D452
+      CodeUri: src/functionCE83D452
       Handler: index.handler
       Runtime: nodejs8.10
       MemorySize: 3008
